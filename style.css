@@ -1,0 +1,142 @@
+/* defaults
+green   #345f63
+yellow  #ffd700
+blue    #33aee6
+pink    #d93396 */
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+/*
+font-family: 'Abel', sans-serif;
+font-family: 'Comfortaa', cursive;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: #345f63;
+}
+
+/* ------------------------------------ */
+
+header {
+    height: 100vh;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    background-color: #ffd700;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.menu li {
+    padding: 10px 0;
+}
+
+.menu a {
+    font-family: 'Comfortaa', cursive;
+    padding: 9px 10px;
+    color: #345f63;
+}
+
+.menu a:hover {
+    background-color: #345f63;
+    color: #ffd700;
+}
+
+/* ------------------------------------ */
+
+.logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lm {
+    width: 80vw;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.spin {
+    width: 60vw;
+    /* animation: linear animatitulo 2s forwards; */
+    animation: animatitulo 3600ms linear infinite;
+}
+
+@keyframes animatitulo {
+    /* from {
+      transform: scale(0.1) rotateZ(540deg);
+      opacity: 0;
+    } */
+    to {
+        /* transform: scale(1);
+        opacity: 1; */
+        transform: rotateZ(360deg);
+    }
+  }
+
+.decs {
+    width: 80vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* ------------------------------------ */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.contact h2 {
+    text-align: center;
+    color: #ffd700;
+    font-family: 'Comfortaa', cursive;
+    margin: 30px 0;
+    font-size: 1.2em;
+}
+
+.icons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+}
+
+.icon {
+    display: flex;
+    width: 80vw;
+    justify-content: centere;
+    align-items: center;
+}
+
+.contact a {
+    font-size: 6rem;
+    color: #ffd700;
+    text-shadow: 0px 0px 10px #ffd70080;
+}
+
+.contact p {
+    color: #ffd700;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 10px;
+    
+}
